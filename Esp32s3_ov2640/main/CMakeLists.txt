@@ -1,0 +1,18 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "wifi/wifi.c"
+        "http_server/http_server.c"
+        "web_app/web_app.c"
+        "camera/camera.c"
+        "uart_stream/uart_stream.c"
+    INCLUDE_DIRS
+        "."
+        "wifi"
+        "http_server"
+        "web_app"
+        "camera"
+        "uart_stream"
+    EMBED_TXTFILES
+        "web_app/index.html"
+)
